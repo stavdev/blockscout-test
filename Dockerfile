@@ -14,9 +14,9 @@ RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 # Postgres
-RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-RUN apt-get update \
-    && apt-get install postgresql-client-12 -y
+# RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+# RUN apt-get update \
+#     && apt-get install postgresql-client-12 -y
 
 # RUN apt-get install postgresql postgresql-contrib -y
 
